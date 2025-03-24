@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+input[type="url"] {
+    width: 300px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#countdown {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.ad-container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    min-height: 250px;
+    width: 300px;
+}
