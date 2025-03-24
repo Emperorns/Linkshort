@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ad Page 1</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Please wait 30 seconds</h1>
+        <div id="countdown">30</div>
+        <!-- Add your Shareus ad code here -->
+        <div class="ad-container">
+            AD 1 CONTENT
+        </div>
+    </div>
+
+    <script>
+        let timeLeft = 30;
+        const shortId = "<%= shortId %>";
+        
+        const timer = setInterval(() => {
+            timeLeft--;
+            document.getElementById('countdown').textContent = timeLeft;
+            
+            if(timeLeft <= 0) {
+                clearInterval(timer);
+                window.location.href = `/ad2/${shortId}`;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
